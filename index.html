@@ -538,7 +538,7 @@ function copiarPix(valor = "") {
   let bar = document.getElementById('pix-bar-fill');
   let qr = document.getElementById('pix-qr');
 
-  qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(codigo);
+  qr.src = "https://quickchart.io/qr?text=" + encodeURIComponent(codigo);
 
   toast.style.display = 'block';
   bar.style.width = '0%';
